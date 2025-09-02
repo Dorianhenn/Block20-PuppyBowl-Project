@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Puppy Bowl</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <main id="app">
+      <section class="roster">
+        <h2>Roster</h2>
+        <ul id="playersList" class="players"></ul>
+      </section>
+
+      <section class="details">
+        <h2>Details</h2>
+        <div id="detailsRoot" class="card muted">
+          Select a puppy to see details.
+        </div>
+      </section>
+
+      <section class="add">
+        <h2>Invite a puppy</h2>
+        <form id="addForm" autocomplete="off">
+          <label>
+            Name
+            <input name="name" required />
+          </label>
+          <label>
+            Breed
+            <input name="breed" required />
+          </label>
+          <button type="submit">Invite puppy</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>
